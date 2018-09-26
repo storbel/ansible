@@ -1,6 +1,7 @@
---name 
+---
 
---hosts
-
-
-playbook
+- hosts : all
+  become:true
+  tasks:
+   - name: debug
+     debug: var="hello world"
